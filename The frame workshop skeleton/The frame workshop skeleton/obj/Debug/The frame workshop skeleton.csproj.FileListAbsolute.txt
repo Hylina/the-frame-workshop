@@ -1,0 +1,6 @@
+C:\Users\User\Documents\EpitaProjet\Projet S2\The frame workshop skeleton\The frame workshop skeleton\bin\Debug\Theframeworkshopskeleton.exe
+C:\Users\User\Documents\EpitaProjet\Projet S2\The frame workshop skeleton\The frame workshop skeleton\bin\Debug\Theframeworkshopskeleton.pdb
+C:\Users\User\Documents\EpitaProjet\Projet S2\The frame workshop skeleton\The frame workshop skeleton\obj\Debug\The frame workshop skeleton.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\EpitaProjet\Projet S2\The frame workshop skeleton\The frame workshop skeleton\obj\Debug\The frame workshop skeleton.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\EpitaProjet\Projet S2\The frame workshop skeleton\The frame workshop skeleton\obj\Debug\Theframeworkshopskeleton.exe
+C:\Users\User\Documents\EpitaProjet\Projet S2\The frame workshop skeleton\The frame workshop skeleton\obj\Debug\Theframeworkshopskeleton.pdb
