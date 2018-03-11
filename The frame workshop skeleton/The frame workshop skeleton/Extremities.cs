@@ -11,12 +11,12 @@ namespace Extremities
 {
     internal class Program
     {
-        public static List<Vector3> getExtremities(Mesh mesh, float density)
+        public static List<Point> getExtremities(Mesh mesh, float density)
         // returns the List of extremities of the mesh
         {
             Vector3[] dimmensions = __getDimensions(mesh);
             
-            List<Vector3> extremities = new List<Vector3>();
+            List<Point> extremities = new List<Point>();
             
             // radius is the average length in the three dimmensions of the object, divided by the density
             float radius =
@@ -38,7 +38,7 @@ namespace Extremities
                         {
                             if (__isExtremity(mesh, radius, new Vector3(pos, j, i)))
                             {
-                                extremities.Add(new Vector3(pos, j, i));
+                                extremities.Add(new Point("extremity", new Vector3(pos, j, i)));
                             }
                             
                             pos += radius / 2;
