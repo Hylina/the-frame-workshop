@@ -1,30 +1,36 @@
 ﻿using System;
+using System.Collections;
+using System.Linq;
+using Boo.Lang;
+using UnityEditor;
+using UnityEngine;
 
 namespace Theframeworkshopskeleton
 {
     public class Point
     {
 
-        private float x, y, z;
-        private float rotX, rotY, rotZ;
+        
+        private Vector3 coordinates;
+        private Vector3 rotation;
         private readonly string name;
         private bool fixedPoint;
         private float weight;
         private int treePos;
 
 
-        public Point(string name, int x, int y, int z)
+        public Point(string name, float x, float y, float z)
         {
             this.name = name;
-            this.fixedPoint = false;
+            fixedPoint = false;
 
-            this.x = x;
-            this.y = y;
-            this.z = z;
+            coordinates.x = x;
+            coordinates.y = y;
+            coordinates.z = z;
 
-            rotX = 0;
-            rotY = 0;
-            rotZ = 0;
+            rotation.x = 0;
+            rotation.y = 0;
+            rotation.z = 0;
 
             treePos = -1;
             weight = 1;
@@ -38,39 +44,20 @@ namespace Theframeworkshopskeleton
             get { return name; }
         }
 
-        public float X
+        public Vector3 Coordinates
         {
-            get { return x; }
-            set { x = value; }
+            get { return coordinates; }
+            set { coordinates = value; }
         }
+    
+        
 
-        public float Y
+        public Vector3 Rotation
         {
-            get { return y; }
-            set { y = value; }
+            get { return rotation; }
+            set { rotation = value; }
         }
-        public float Z
-        {
-            get { return z; }
-            set { z = value; }
-        }
-
-        public float RotX
-        {
-            get { return rotX; }
-            set { rotX = value; }
-        }
-        public float RotY
-        {
-            get { return rotY; }
-            set { rotY = value; }
-        }
-        public float RotZ
-        {
-            get { return rotZ; }
-            set { rotZ = value; }
-        }
-
+        
         public bool FixedPoint
         {
             get { return fixedPoint; }
@@ -89,20 +76,19 @@ namespace Theframeworkshopskeleton
             set { treePos = value; }
         }
 
-        public void AddValuePos(int x, int y, int z)
+        public void AddValuePos(float x, float y, float z)
         {
-            this.x += x;
-            this.y += y;
-            this.z += z;
+            coordinates.x += x;
+            coordinates.y += y;
+            coordinates.z += z;
         }
 
-        public void AddValueRotPos(int rotX, int rotY, int rotZ)
+        public void AddValueRotPos(float rotX, float rotY, float rotZ)
         {
-            this.rotX += rotX;
-            this.rotY += rotY;
-            this.rotZ += rotZ;
+            rotation.x += rotX;
+            rotation.y += rotY;
+            rotation.z += rotZ;
         }
 
     }
 }
-
