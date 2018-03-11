@@ -36,7 +36,7 @@ namespace Theframeworkshopskeleton
             if (intersections.Count == 0 ) //funcEtienne between root and test point
             {
                 linked = true;
-                Point intermediate = new Point(name, middleX, middleY, middleZ);
+                Point intermediate = new Point(name, testPoint);
                 return intermediate;
             }
 
