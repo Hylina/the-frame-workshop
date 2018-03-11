@@ -19,14 +19,12 @@ namespace Theframeworkshopskeleton
         private int treePos;
 
 
-        public Point(string name, float x, float y, float z)
+        public Point(string name, Vector3 coordinates)
         {
             this.name = name;
             fixedPoint = false;
 
-            coordinates.x = x;
-            coordinates.y = y;
-            coordinates.z = z;
+            this.coordinates = coordinates
 
             rotation.x = 0;
             rotation.y = 0;
