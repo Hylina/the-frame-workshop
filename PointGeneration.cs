@@ -236,15 +236,15 @@ namespace Theframeworkshopskeleton
             List<Vector3> intersections = Line_meshIntersect.Program.line_meshIntersect(mesh, root, extremum);
             
             // Takes the middle of the closest position to the root and the next collision
-            float middleX = (root.x + extremum.x) / 2; //to change
-            float middleY = (root.y + extremum.y) / 2; // to change
-            float middleZ = (root.z + extremum.z) / 2; // to change
+            float middleX = (root.x + extremum.x) / 2; 
+            float middleY = (root.y + extremum.y) / 2; 
+            float middleZ = (root.z + extremum.z) / 2; 
             Vector3 testPoint = new Vector3(middleX, middleY, middleZ);
 
             float phi = 0f;
             float teta = 0f;
             
-            List<Vector3> plan = NormalToLine(mesh ,root, extremum, testPoint, ref phi, ref teta, 30); // to change root and extremum
+            List<Vector3> plan = NormalToLine(mesh ,root, extremum, testPoint, ref phi, ref teta, 30); 
 
             if (plan.Count == 1)
             {
