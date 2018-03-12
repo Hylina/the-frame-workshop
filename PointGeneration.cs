@@ -206,7 +206,7 @@ namespace Theframeworkshopskeleton
                             }
 
                             else
-                                throw new Exception("NormalToLines : (z != 0) No collision with the mesh, unable to find a point in the mesh");
+                                return intersections;
 
                         }
                     }
@@ -253,8 +253,9 @@ namespace Theframeworkshopskeleton
             }
 
             bool linked = false;
-
-            Point possibiliy = __BinarySearchInMesh(plan[0], plan[1], maxTry, 0, ref linked, "name", mesh);
+		
+	    if (plan.Count != 0)
+		    Point possibiliy = __BinarySearchInMesh(plan[0], plan[1], maxTry, 0, ref linked, "name", mesh);
 
             if (linked)
             {
