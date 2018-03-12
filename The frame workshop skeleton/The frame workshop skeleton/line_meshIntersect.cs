@@ -5,7 +5,7 @@ using Boo.Lang;
 using UnityEditor;
 using UnityEngine;
 
-namespace Line_meshIntersect
+namespace Theframeworkshopskeleton
 {
     internal class Program
     {
